@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #7AC6D2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem 2rem;
+}
+
+.header-artikel {
+  background-color: #3D90D7;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
+
+.artikel-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+}
+
+.artikel {
+  width: calc(40% - 40px); 
+  background: white;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.artikel img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.judul {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px; 
+}
+
+.tanggal {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.isi {
+  font-size: 16px;
+  color: #333;
+  max-height: 150px; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+}
+
+.clear {
+  clear: both;
+}
+
+.artikel:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in-out;
+}
+
+
